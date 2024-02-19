@@ -12,19 +12,6 @@ namespace Slide01
 
         public static void Main()
         {
-            //Random rand = new Random();
-            //for (int i = 0; i < array.Length; i++)
-            //{
-            //    array[i] = rand.Next(10);
-            //    Console.WriteLine(array[i]);
-            //}
-
-
-            //int[][] numbers = {
-            //new int[] { 1, 2, 4, 5 },
-            //new int[] { 1, 2, 3 },
-            //new int[] { 1, 2, 3, 4, 5 }
-            //};
             Console.WriteLine("Введите количество массивов: ");
             int countArray = int.Parse(Console.ReadLine());
             Random rand = new Random();
