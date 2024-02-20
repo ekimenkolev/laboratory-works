@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
+using System.Globalization;
+using System.Linq;
+using System.Reflection;
+using System.Security.Cryptography;
+using System.Xml.Linq;
+using static System.Net.Mime.MediaTypeNames;
+
+namespace Slide01
+{
+    class Program
+    {
+
+        public static void Main()
+        {
+            List<int> numbers = new List<int>();
+            Random random = new Random();
+            int count = int.Parse(Console.ReadLine());
+            for (int i = 0; i < count; i++)
+            {
+                numbers.Add(random.Next(100));
+                Console.Write(numbers[i] + " ");
+            }
+
+            for(int i = count - 1; i >= 0;i--)
+            {
+                if (numbers[i] > 50)
+                {
+                    numbers.RemoveAt(i);
+                    count--;
+                }
+            }
+            Console.WriteLine();
+            for (int i = 0; i < count; i++)
+            { 
+                Console.Write(numbers[i] + " ");
+            }
+        }
+    }
+}
+
+
