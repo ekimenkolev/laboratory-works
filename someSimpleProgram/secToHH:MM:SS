@@ -26,8 +26,6 @@ namespace Slide01
                 Console.WriteLine($"{hours:d2}:{min % 60:D2}:{sec:D2}");
             }
             catch { Console.WriteLine("Некоректнный ввод"); }
-
-
         }
     }
 }
